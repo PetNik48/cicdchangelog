@@ -1,2 +1,2 @@
 # cicdchangelog
-- TEST
+- TESTs
