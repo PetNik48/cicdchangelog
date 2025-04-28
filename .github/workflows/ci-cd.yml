@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-test-deploy:
     runs-on: ubuntu-latest
@@ -36,7 +39,7 @@ jobs:
         git config --global user.email "github-actions@github.com"
         git add CHANGELOG.md
         git commit -m "Update CHANGELOG [skip ci]" || echo "No changes to commit"
-        git push origin main
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
 
     - name: Deploy
       run: |
