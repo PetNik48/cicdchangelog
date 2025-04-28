@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-test-deploy:
@@ -36,7 +36,7 @@ jobs:
         git config --global user.email "github-actions@github.com"
         git add CHANGELOG.md
         git commit -m "Update CHANGELOG [skip ci]" || echo "No changes to commit"
-        git push origin master
+        git push origin main
 
     - name: Deploy
       run: |
