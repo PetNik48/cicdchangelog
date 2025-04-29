@@ -1,5 +1,7 @@
 # Changelog
 
+- Update readme.md (PetNik48, 2025-04-29)
+- Update CHANGELOG [skip ci] (github-actions, 2025-04-29)
 - Fix changelog gen (PetNik48, 2025-04-29)
 - Update generate_changelog.sh (PetNik48, 2025-04-28)
 - Add test feature to readme (PetNik48, 2025-04-28)
